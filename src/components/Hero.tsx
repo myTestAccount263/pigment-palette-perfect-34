@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-children.jpg";
+import classroomImage from "@/assets/classroom-scene.jpg";
+import educationImage from "@/assets/hero-education.jpg";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,12 +14,12 @@ const Hero = () => {
       subtitle: "At Future Wings Foundation"
     },
     {
-      image: heroImage,
+      image: classroomImage,
       title: "EMPOWERING YOUNG MINDS FOR A BRIGHTER TOMORROW.",
       subtitle: "Building Futures Together"
     },
     {
-      image: heroImage,
+      image: educationImage,
       title: "EDUCATION IS THE KEY TO UNLOCKING POTENTIAL.",
       subtitle: "Transforming Lives Through Learning"
     }
@@ -40,7 +42,7 @@ const Hero = () => {
     <section className="relative h-[calc(100vh-80px)] overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
       >
         <div className="absolute inset-0 bg-foreground/50"></div>
