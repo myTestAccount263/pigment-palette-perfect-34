@@ -26,7 +26,7 @@ const TeamSection = () => {
     <section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">Meet the Team</h2>
-        <p className="text-sm sm:text-base text-muted-foreground mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-sm sm:text-base text-foreground mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
           They are the hands that lift, the hearts that serve, the spirits behind Future Wings Foundation's success.
         </p>
 
