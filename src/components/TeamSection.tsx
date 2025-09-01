@@ -48,7 +48,19 @@ const TeamSection = () => {
 
         <Button 
           variant="outline" 
-          className="border-foreground text-foreground hover:bg-foreground hover:text-background w-full sm:w-auto"
+          className="border-foreground text-foreground w-full sm:w-auto"
+          style={{ 
+            '--hover-bg': 'hsl(var(--foundation-blue))',
+            '--hover-text': 'hsl(var(--foundation-white))'
+          } as React.CSSProperties}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = 'hsl(var(--foundation-blue))';
+            e.currentTarget.style.color = 'hsl(var(--foundation-white))';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+            e.currentTarget.style.color = 'hsl(var(--foreground))';
+          }}
         >
           VIEW ALL
         </Button>
