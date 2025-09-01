@@ -59,7 +59,7 @@ const Footer = () => {
               />
               <Button 
                 variant="rounded" 
-                className="text-background text-sm whitespace-nowrap"
+                className="text-background text-sm whitespace-nowrap rounded-r-full rounded-l-none"
               >
                 SEND NOW
               </Button>
