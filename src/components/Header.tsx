@@ -67,7 +67,7 @@ const Header = () => {
               <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">About Us</a>
               <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">Our Impact</a>
               <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">Contact Us</a>
-              <Button variant="rounded" className="w-full text-foreground mt-4">
+              <Button variant="rounded" className="text-foreground mt-4 px-8">
                 DONATE NOW
               </Button>
               
