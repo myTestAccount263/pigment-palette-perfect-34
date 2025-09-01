@@ -41,7 +41,7 @@ const TeamSection = () => {
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2">{member.name}</h3>
-              <p className="text-sm sm:text-base text-muted-foreground">{member.role}</p>
+              <p className="text-sm sm:text-base" style={{ color: 'hsl(var(--foundation-blue))' }}>{member.role}</p>
             </div>
           ))}
         </div>
