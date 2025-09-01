@@ -41,7 +41,7 @@ const ImpactSection = () => {
                 What We've Learned
               </h3>
               <div className="bg-background/60 backdrop-blur-sm rounded-xl p-6 border border-border/50 shadow-lg">
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground leading-relaxed">
                   After working with students and educators around Harare for one year, the answer became clear: <span className="font-semibold text-primary">dignity, not just resources</span>, was the barrier no one was addressing.
                 </p>
               </div>
