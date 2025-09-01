@@ -61,8 +61,9 @@ const Hero = () => {
             ))}
           </h1>
           <Button 
+            variant="rounded"
             size="lg" 
-            className="bg-transparent border-2 border-background text-background hover:bg-background hover:text-foreground px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-semibold transition-all duration-300"
+            className="text-background px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-semibold"
           >
             DONATE NOW
           </Button>

@@ -20,8 +20,8 @@ const ChangeSection = () => {
               Future Wings Foundation, based in Zimbabwe, is a nonprofit organization committed to empowering underserved children through education. We believe that every child deserves the support necessary for a thriving educational journey.
             </p>
             <Button 
-              variant="outline" 
-              className="border-background text-background hover:bg-background hover:text-primary w-full sm:w-auto"
+              variant="rounded"
+              className="text-background w-full sm:w-auto"
             >
               MORE ABOUT US
             </Button>

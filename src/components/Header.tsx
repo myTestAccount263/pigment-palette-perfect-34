@@ -44,7 +44,7 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base">About Us</a>
             <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base">Our Impact</a>
             <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base">Contact Us</a>
-            <Button variant="outline" className="border-foreground text-foreground hover:bg-foreground hover:text-background text-sm">
+            <Button variant="rounded" className="text-foreground text-sm">
               DONATE NOW
             </Button>
           </div>
@@ -62,12 +62,12 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 bg-background shadow-lg border-t z-50">
-            <div className="px-4 py-4 space-y-4">
-              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2">Home</a>
-              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2">About Us</a>
-              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2">Our Impact</a>
-              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2">Contact Us</a>
-              <Button variant="outline" className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background mt-4">
+            <div className="px-4 py-6 space-y-6 text-center">
+              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">Home</a>
+              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">About Us</a>
+              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">Our Impact</a>
+              <a href="#" className="block text-foreground hover:text-primary transition-colors py-2 text-lg">Contact Us</a>
+              <Button variant="rounded" className="w-full text-foreground mt-4">
                 DONATE NOW
               </Button>
               
