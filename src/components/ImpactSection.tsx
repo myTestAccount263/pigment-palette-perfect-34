@@ -150,10 +150,10 @@ const ImpactSection = () => {
           <Button 
             variant="rounded" 
             size="lg" 
-            className="text-background bg-primary hover:bg-primary/90 group"
+            className="text-background bg-primary hover:bg-primary/90 hover:text-background group"
           >
             GET IN TOUCH
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 ml-2 text-background group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
       </div>
