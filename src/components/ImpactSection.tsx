@@ -11,7 +11,7 @@ const ImpactSection = () => {
             Our <span className="text-primary">Impact</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-foreground max-w-4xl mx-auto leading-relaxed">
             Founded in 2024, Future Wings began as an explorative initiative to understand what really holds students back from succeeding in school.
           </p>
         </div>
@@ -29,7 +29,7 @@ const ImpactSection = () => {
                 <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
                   We piloted interventions across Harare - delivering uniforms, sanitary pads, school fees, and classroom repairs, supporting over <span className="font-semibold text-primary">700 students</span> in our first year alone.
                 </p>
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground leading-relaxed">
                   Each project taught us more about what students really need to succeed.
                 </p>
               </div>
@@ -89,7 +89,7 @@ const ImpactSection = () => {
               What We're Doing <span className="text-primary">Now</span>
             </h3>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg sm:text-xl text-foreground max-w-5xl mx-auto leading-relaxed mb-8">
               In 2026, we are scaling our dignity-first model across four schools. Our goal is to support at least <span className="font-semibold text-primary">2,500 students</span> through three interconnected pillars:
             </p>
           </div>
@@ -103,7 +103,7 @@ const ImpactSection = () => {
                   <Heart className="w-10 h-10 text-background" />
                 </div>
                 <h4 className="text-xl sm:text-2xl font-bold mb-4 text-foreground">Dignity Kits</h4>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base text-foreground leading-relaxed">
                   Carefully curated bundles that include hygiene essentials, school supplies, and clothing items tailored by gender and age to meet pressing needs of students.
                 </p>
               </div>
@@ -117,7 +117,7 @@ const ImpactSection = () => {
                   <Building className="w-10 h-10 text-background" />
                 </div>
                 <h4 className="text-xl sm:text-2xl font-bold mb-4 text-foreground">Dignity Spaces</h4>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base text-foreground leading-relaxed">
                   We repair, renovate, and revitalise school infrastructure to create safe, functional, and welcoming environments that inspire learning.
                 </p>
               </div>
@@ -131,7 +131,7 @@ const ImpactSection = () => {
                   <Users className="w-10 h-10 text-background" />
                 </div>
                 <h4 className="text-xl sm:text-2xl font-bold mb-4 text-foreground">Dignity Partnerships</h4>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base text-foreground leading-relaxed">
                   We centre the voices of caregivers, educators, and students to ensure our work is locally owned, culturally grounded, and built to last.
                 </p>
               </div>
@@ -144,7 +144,7 @@ const ImpactSection = () => {
           <h4 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">
             Ready to Make a Difference?
           </h4>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground mb-8 max-w-2xl mx-auto">
             Want to partner with us and help restore dignity in education across Zimbabwe?
           </p>
           <Button 
