@@ -56,10 +56,12 @@ const TeamSection = () => {
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = 'hsl(var(--foundation-blue))';
             e.currentTarget.style.color = 'hsl(var(--foundation-white))';
+            e.currentTarget.style.border = 'none';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.backgroundColor = 'transparent';
             e.currentTarget.style.color = 'hsl(var(--foreground))';
+            e.currentTarget.style.border = '1px solid hsl(var(--foreground))';
           }}
         >
           VIEW ALL
