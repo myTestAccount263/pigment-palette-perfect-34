@@ -44,7 +44,7 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base">About Us</a>
             <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base">Our Impact</a>
             <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base">Contact Us</a>
-            <Button variant="rounded" className="text-foreground text-sm">
+            <Button variant="rounded" className="text-foreground text-sm border-foreground hover:border-foreground">
               DONATE NOW
             </Button>
           </div>
