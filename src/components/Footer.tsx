@@ -5,61 +5,61 @@ import { MapPin, Phone, Mail } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <div className="sm:col-span-1">
+            <h3 className="text-base sm:text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Our Impact</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
+              <li><a href="#" className="text-sm sm:text-base hover:text-primary transition-colors">Home</a></li>
+              <li><a href="#" className="text-sm sm:text-base hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="#" className="text-sm sm:text-base hover:text-primary transition-colors">Our Impact</a></li>
+              <li><a href="#" className="text-sm sm:text-base hover:text-primary transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
           {/* Other Pages */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Other Pages</h3>
+          <div className="sm:col-span-1">
+            <h3 className="text-base sm:text-lg font-semibold mb-4">Other Pages</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-primary transition-colors">Impact Reports</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Annual Reports</a></li>
+              <li><a href="#" className="text-sm sm:text-base hover:text-primary transition-colors">Impact Reports</a></li>
+              <li><a href="#" className="text-sm sm:text-base hover:text-primary transition-colors">Annual Reports</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h3 className="text-base sm:text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span>Harare, Zimbabwe</span>
+                <MapPin className="w-4 sm:w-5 h-4 sm:h-5 mt-1 flex-shrink-0" />
+                <span className="text-sm sm:text-base">Harare, Zimbabwe</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 flex-shrink-0" />
-                <span>+263 788883462</span>
+                <Phone className="w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0" />
+                <span className="text-sm sm:text-base">+263 788883462</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 flex-shrink-0" />
-                <span>info@futurewingsfoundation.com</span>
+              <div className="flex items-start space-x-3">
+                <Mail className="w-4 sm:w-5 h-4 sm:h-5 mt-1 flex-shrink-0" />
+                <span className="text-sm sm:text-base break-all">info@futurewingsfoundation.com</span>
               </div>
             </div>
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-sm mb-4 opacity-90">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h3 className="text-base sm:text-lg font-semibold mb-4">Newsletter</h3>
+            <p className="text-xs sm:text-sm mb-4 opacity-90 leading-relaxed">
               Subscribe to get updates on our recent information to our community programs, and volunteers.
             </p>
-            <div className="flex space-x-2">
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
               <Input 
                 placeholder="Your Email Address"
-                className="bg-background text-foreground"
+                className="bg-background text-foreground text-sm flex-1"
               />
               <Button 
                 variant="secondary" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm whitespace-nowrap"
               >
                 SEND NOW
               </Button>
@@ -69,16 +69,18 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-background/20 py-6">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold">FW</span>
+      <div className="border-t border-background/20 py-4 sm:py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <div className="flex items-center space-x-4">
+              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-primary-foreground font-bold text-sm sm:text-base">FW</span>
+              </div>
+              <span className="text-xs sm:text-sm text-center sm:text-left">When You Give A Child Learns, Learn More Today, Shape Tomorrow</span>
             </div>
-            <span className="text-sm">When You Give A Child Learns, Learn More Today, Shape Tomorrow</span>
-          </div>
-          <div className="text-sm opacity-75">
-            Copyright © 2023. All rights reserved.
+            <div className="text-xs sm:text-sm opacity-75 text-center sm:text-right">
+              Copyright © 2023. All rights reserved.
+            </div>
           </div>
         </div>
       </div>
