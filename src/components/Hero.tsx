@@ -10,18 +10,18 @@ const Hero = () => {
   const slides = [
     {
       image: heroImage,
-      title: "WE BELIEVE EVERY CHILD DESERVES THE OPPORTUNITY TO A QUALITY EDUCATION.",
-      subtitle: "At Future Wings Foundation"
+      title: "EVERY CHILD DESERVES TO LEARN WITH DIGNITY.",
+      subtitle: "At Future Wings Foundation, we are reimagining education for students in under-resourced communities across Zimbabwe."
     },
     {
       image: classroomImage,
-      title: "EMPOWERING YOUNG MINDS FOR A BRIGHTER TOMORROW.",
-      subtitle: "Building Futures Together"
+      title: "WE DON'T JUST PROVIDE SUPPLIES, WE RESTORE CONFIDENCE.",
+      subtitle: "Through our dignity-first model, we equip children aged 6–18 with the tools, environments, and support systems they need to thrive."
     },
     {
       image: educationImage,
-      title: "EDUCATION IS THE KEY TO UNLOCKING POTENTIAL.",
-      subtitle: "Transforming Lives Through Learning"
+      title: "WE'RE NOT HERE TO TICK BOXES. WE'RE HERE TO BUILD FUTURES.",
+      subtitle: "Explore our work, meet our community, and join the movement."
     }
   ];
 
@@ -53,10 +53,10 @@ const Hero = () => {
         <div className="text-center text-background max-w-5xl">
           <p className="text-xs sm:text-sm mb-2 sm:mb-4 opacity-90">{slides[currentSlide].subtitle}</p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight">
-            {slides[currentSlide].title.split('QUALITY').map((part, index) => (
+            {slides[currentSlide].title.split('DIGNITY').map((part, index) => (
               index === 0 ? part : (
                 <span key={index}>
-                  <span className="text-primary">QUALITY</span>
+                  <span className="text-primary">DIGNITY</span>
                   {part}
                 </span>
               )

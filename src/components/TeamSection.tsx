@@ -6,28 +6,28 @@ import simbarasheImage from "@/assets/team-simbarashe.jpg";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Alisa Adams",
-      role: "Founder",
+      name: "Alisa Ncube",
+      role: "Executive Director",
       image: alisaImage
     },
     {
-      name: "Vanessa Kambasha",
-      role: "Programs Manager",
-      image: vanessaImage
+      name: "Simbarashe Mombe",
+      role: "Program Manager",
+      image: simbarasheImage
     },
     {
-      name: "Simbarashe Mahlaulo",
-      role: "M.Ed, Fdr & CollectionEngineer",
-      image: simbarasheImage
+      name: "Vanessa Muringani",
+      role: "Communications Manager",
+      image: vanessaImage
     }
   ];
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">Meet the Team</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">Meet Our Team</h2>
         <p className="text-sm sm:text-base text-foreground mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
-          They are the hands that lift, the hearts that serve, the spirits behind Future Wings Foundation's success.
+          Our dedicated team is committed to restoring dignity and creating lasting change in education across Zimbabwe.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">

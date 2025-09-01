@@ -11,16 +11,16 @@ const Header = () => {
       <div className="bg-foreground text-background py-2 px-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
-            <span className="text-xs xl:text-sm">When You Give A Child Learns, Contribute Today, Shape Tomorrow</span>
+            <span className="text-xs xl:text-sm">To increase educational success for under-resourced students in Zimbabwe by restoring the conditions that make learning possible</span>
           </div>
           <div className="flex items-center space-x-4">
             <div className="hidden xl:flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>info@futurewingsfoundation.com</span>
+              <span>alisa@futurewingsfoundation.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4" />
-              <span>+263 788883462</span>
+              <span>+263 788863452</span>
             </div>
             <div className="flex items-center space-x-2">
               <Facebook className="w-4 h-4 hover:text-primary transition-colors cursor-pointer" />
@@ -82,11 +82,11 @@ const Header = () => {
               <div className="text-center text-sm text-muted-foreground pt-2">
                 <div className="flex items-center justify-center space-x-2 mb-2">
                   <Phone className="w-4 h-4" />
-                  <span>+263 788883462</span>
+                  <span>+263 788863452</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <Mail className="w-4 h-4" />
-                  <span className="text-xs">info@futurewingsfoundation.com</span>
+                  <span className="text-xs">alisa@futurewingsfoundation.com</span>
                 </div>
               </div>
             </div>

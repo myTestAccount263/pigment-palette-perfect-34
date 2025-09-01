@@ -37,11 +37,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0" />
-                <span className="text-sm sm:text-base">+263 788883462</span>
+                <span className="text-sm sm:text-base">+263 788863452</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="w-4 sm:w-5 h-4 sm:h-5 mt-1 flex-shrink-0" />
-                <span className="text-sm sm:text-base break-all">info@futurewingsfoundation.com</span>
+                <span className="text-sm sm:text-base break-all">alisa@futurewingsfoundation.com</span>
               </div>
             </div>
           </div>
@@ -76,10 +76,10 @@ const Footer = () => {
               <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-primary-foreground font-bold text-sm sm:text-base">FW</span>
               </div>
-              <span className="text-xs sm:text-sm text-center sm:text-left">When You Give A Child Learns, Learn More Today, Shape Tomorrow</span>
+              <span className="text-xs sm:text-sm text-center sm:text-left">A Zimbabwe where every child learns in an environment that affirms their dignity, supports their potential, and unlocks their future</span>
             </div>
             <div className="text-xs sm:text-sm opacity-75 text-center sm:text-right">
-              Copyright © 2023. All rights reserved.
+              Copyright © 2026. All rights reserved.
             </div>
           </div>
         </div>

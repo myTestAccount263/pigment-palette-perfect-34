@@ -10,14 +10,13 @@ const ChangeSection = () => {
           {/* Left content */}
           <div className="text-background order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
-              Be Part of A Change<br />
-              You Want To See In The World
+              Who We Are
             </h2>
             <p className="text-base sm:text-lg mb-3 sm:mb-4 opacity-90">
-              "Education is the most powerful weapon which you can use to change the world." — Nelson Mandela
+              Future Wings Foundation is a Zimbabwean non-profit organisation working at the intersection of education access, student dignity, and community empowerment.
             </p>
             <p className="text-sm sm:text-base mb-6 sm:mb-8 opacity-80 leading-relaxed">
-              Future Wings Foundation, based in Zimbabwe, is a nonprofit organization committed to empowering underserved children through education. We believe that every child deserves the support necessary for a thriving educational journey.
+              We work in peri-urban public schools to deliver low-cost, high-impact interventions that help students thrive not just survive in school. We believe that dignity, not just resources, is the barrier no one is addressing.
             </p>
             <Button 
               variant="rounded"
