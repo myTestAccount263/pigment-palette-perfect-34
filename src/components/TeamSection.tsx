@@ -81,7 +81,7 @@ const TeamSection = () => {
                   {member.role}
                 </p>
                 {member.bio && (
-                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-xs sm:text-sm text-foreground leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {member.bio}
                   </p>
                 )}
