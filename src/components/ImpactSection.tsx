@@ -26,7 +26,7 @@ const ImpactSection = () => {
                 Where We Started
               </h3>
               <div className="bg-background/60 backdrop-blur-sm rounded-xl p-6 border border-border/50 shadow-lg">
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4">
+                <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
                   We piloted interventions across Harare - delivering uniforms, sanitary pads, school fees, and classroom repairs, supporting over <span className="font-semibold text-primary">700 students</span> in our first year alone.
                 </p>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
