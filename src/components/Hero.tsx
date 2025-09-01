@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
         <div className="text-center text-background max-w-5xl">
           <p className="text-xs sm:text-sm mb-2 sm:mb-4 opacity-90">{slides[currentSlide].subtitle}</p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight">
