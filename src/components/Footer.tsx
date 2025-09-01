@@ -55,7 +55,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
               <Input 
                 placeholder="Your Email Address"
-                className="bg-background text-foreground text-sm flex-1 rounded-full border-none"
+                className="bg-background text-foreground text-sm flex-1 rounded-l-full border-none"
               />
               <Button 
                 variant="rounded" 
