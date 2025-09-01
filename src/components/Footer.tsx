@@ -58,8 +58,8 @@ const Footer = () => {
                 className="bg-background text-foreground text-sm flex-1"
               />
               <Button 
-                variant="secondary" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm whitespace-nowrap"
+                variant="rounded" 
+                className="text-background text-sm whitespace-nowrap"
               >
                 SEND NOW
               </Button>
