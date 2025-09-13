@@ -4,10 +4,14 @@ import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-children.jpg";
 import classroomImage from "@/assets/classroom-scene.jpg";
 import educationImage from "@/assets/hero-education.jpg";
+import ContentEditor from "@/components/ContentEditor";
+import { useContentEditor } from "@/hooks/useContentEditor";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
+  const { content } = useContentEditor('hero');
+  
+  const defaultSlides = [
     {
       image: heroImage,
       title: "EVERY CHILD DESERVES TO LEARN WITH DIGNITY.",
@@ -25,6 +29,11 @@ const Hero = () => {
     }
   ];
 
+  const slides = content?.slides?.map((slide: any, index: number) => ({
+    ...slide,
+    image: [heroImage, classroomImage, educationImage][index] || heroImage
+  })) || defaultSlides;
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -39,7 +48,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-80px)] overflow-hidden">
+    <ContentEditor sectionKey="hero" sectionName="Hero Section">
+      <section className="relative h-[calc(100vh-80px)] overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
@@ -67,7 +77,7 @@ const Hero = () => {
             size="lg" 
             className="text-background px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-semibold"
           >
-            DONATE NOW
+            {content?.buttonText || 'DONATE NOW'}
           </Button>
         </div>
       </div>
@@ -101,7 +111,8 @@ const Hero = () => {
           />
         ))}
       </div>
-    </section>
+      </section>
+    </ContentEditor>
   );
 };
 

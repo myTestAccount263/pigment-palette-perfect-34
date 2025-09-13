@@ -4,9 +4,12 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import alisaImage from "@/assets/team-alisa.jpg";
 import vanessaImage from "@/assets/team-vanessa.jpg";
 import simbarasheImage from "@/assets/team-simbarashe.jpg";
+import ContentEditor from "@/components/ContentEditor";
+import { useContentEditor } from "@/hooks/useContentEditor";
 
 const TeamSection = () => {
   const [showAll, setShowAll] = useState(false);
+  const { content } = useContentEditor('team_section');
 
   const allTeamMembers = [
     {
@@ -50,12 +53,13 @@ const TeamSection = () => {
   const displayedMembers = showAll ? allTeamMembers : allTeamMembers.slice(0, 3);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 animate-fade-in">Meet Our Team</h2>
-        <p className="text-sm sm:text-base text-foreground mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-          Our dedicated team is committed to restoring dignity and creating lasting change in education across Zimbabwe.
-        </p>
+    <ContentEditor sectionKey="team_section" sectionName="Team Section">
+      <section className="py-12 sm:py-16 lg:py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 animate-fade-in">{content?.title || 'Meet Our Team'}</h2>
+          <p className="text-sm sm:text-base text-foreground mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
+            {content?.description || 'Our dedicated team is committed to restoring dignity and creating lasting change in education across Zimbabwe.'}
+          </p>
 
         <div className="grid gap-6 sm:gap-8 mb-8 sm:mb-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {displayedMembers.map((member, index) => (
@@ -115,8 +119,9 @@ const TeamSection = () => {
             </p>
           )}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </ContentEditor>
   );
 };
 

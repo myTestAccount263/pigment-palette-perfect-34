@@ -1,28 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import classroomImage from "@/assets/classroom-scene.jpg";
+import ContentEditor from "@/components/ContentEditor";
+import { useContentEditor } from "@/hooks/useContentEditor";
 
 const ChangeSection = () => {
+  const { content } = useContentEditor('change_section');
+
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-primary">
+    <ContentEditor sectionKey="change_section" sectionName="Change Section">
+      <section className="py-12 sm:py-16 lg:py-20 bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
           {/* Left content */}
           <div className="text-background order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
-              Who We Are
+              {content?.title || 'Who We Are'}
             </h2>
             <p className="text-base sm:text-lg mb-3 sm:mb-4 opacity-90">
-              Future Wings Foundation is a Zimbabwean non-profit organisation working at the intersection of education access, student dignity, and community empowerment.
+              {content?.description || 'Future Wings Foundation is a Zimbabwean non-profit organisation working at the intersection of education access, student dignity, and community empowerment.'}
             </p>
             <p className="text-sm sm:text-base mb-6 sm:mb-8 opacity-80 leading-relaxed">
-              We work in peri-urban public schools to deliver low-cost, high-impact interventions that help students thrive not just survive in school. We believe that dignity, not just resources, is the barrier no one is addressing.
+              {content?.subdescription || 'We work in peri-urban public schools to deliver low-cost, high-impact interventions that help students thrive not just survive in school. We believe that dignity, not just resources, is the barrier no one is addressing.'}
             </p>
             <Button 
               variant="rounded"
               className="text-background w-full sm:w-auto"
             >
-              MORE ABOUT US
+              {content?.buttonText || 'MORE ABOUT US'}
             </Button>
           </div>
 
@@ -57,7 +62,8 @@ const ChangeSection = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </ContentEditor>
   );
 };
 
