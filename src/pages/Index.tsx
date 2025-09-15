@@ -5,11 +5,13 @@ import ImpactSection from "@/components/ImpactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 import AdminControls from "@/components/AdminControls";
+import EditingIndicator from "@/components/EditingIndicator";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <AdminControls />
+      <EditingIndicator />
       <Header />
       <Hero />
       <ChangeSection />
