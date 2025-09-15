@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Edit, Save, X } from 'lucide-react';
 import { useContentEditor } from '@/hooks/useContentEditor';
+import { useEditMode } from '@/hooks/useEditMode';
 
 interface ContentEditorProps {
   sectionKey: string;
@@ -16,6 +17,7 @@ interface ContentEditorProps {
 
 const ContentEditor = ({ sectionKey, sectionName, children }: ContentEditorProps) => {
   const { content, loading, saving, canEdit, updateContent } = useContentEditor(sectionKey);
+  const { editMode } = useEditMode();
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState<any>({});
 
@@ -47,7 +49,7 @@ const ContentEditor = ({ sectionKey, sectionName, children }: ContentEditorProps
     return children;
   }
 
-  if (!canEdit) {
+  if (!canEdit || !editMode) {
     return children;
   }
 

@@ -1,24 +1,30 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ChangeSection from "@/components/ChangeSection";
 import ImpactSection from "@/components/ImpactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
-import AdminControls from "@/components/AdminControls";
+import AdminPanel from "@/components/AdminPanel";
 import EditingIndicator from "@/components/EditingIndicator";
+import { EditModeProvider } from "@/hooks/useEditMode";
 
 const Index = () => {
+  const [editMode, setEditMode] = useState(false);
+
   return (
-    <div className="min-h-screen">
-      <AdminControls />
-      <EditingIndicator />
-      <Header />
-      <Hero />
-      <ChangeSection />
-      <ImpactSection />
-      <TeamSection />
-      <Footer />
-    </div>
+    <EditModeProvider>
+      <div className="min-h-screen">
+        <AdminPanel editMode={editMode} setEditMode={setEditMode} />
+        <EditingIndicator />
+        <Header />
+        <Hero />
+        <ChangeSection />
+        <ImpactSection />
+        <TeamSection />
+        <Footer />
+      </div>
+    </EditModeProvider>
   );
 };
 

@@ -1,18 +1,18 @@
 import { Edit } from "lucide-react";
-import { useAuth } from "@/hooks/useAuth";
+import { useEditMode } from "@/hooks/useEditMode";
 
 const EditingIndicator = () => {
-  const { userRole } = useAuth();
+  const { editMode, canEdit } = useEditMode();
   
-  if (userRole !== 'admin' && userRole !== 'editor') {
+  if (!canEdit || !editMode) {
     return null;
   }
 
   return (
-    <div className="fixed bottom-4 left-4 z-50 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-primary/20 text-sm text-primary">
+    <div className="fixed bottom-4 left-4 z-50 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-primary/20 text-sm text-primary animate-pulse">
       <div className="flex items-center gap-2">
         <Edit className="w-4 h-4" />
-        <span>Hover over sections to edit content</span>
+        <span>Edit Mode Active - Hover over sections to edit</span>
       </div>
     </div>
   );
