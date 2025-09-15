@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Users, Heart, Building, ArrowRight } from "lucide-react";
+import ContentEditor from "./ContentEditor";
 
 const ImpactSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-background via-accent/5 to-background">
+    <ContentEditor sectionKey="impact_section" sectionName="Impact Section">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-background via-accent/5 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 lg:mb-20">
@@ -158,6 +160,7 @@ const ImpactSection = () => {
         </div>
       </div>
     </section>
+    </ContentEditor>
   );
 };
 

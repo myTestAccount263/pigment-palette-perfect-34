@@ -63,9 +63,10 @@ const ContentEditor = ({ sectionKey, sectionName, children }: ContentEditorProps
               size="sm"
               variant="secondary"
               onClick={handleEdit}
-              className="bg-primary/90 text-primary-foreground hover:bg-primary"
+              className="bg-primary/90 text-primary-foreground hover:bg-primary shadow-lg backdrop-blur-sm"
             >
-              <Edit className="w-4 h-4" />
+              <Edit className="w-4 h-4 mr-1" />
+              Edit
             </Button>
           </DialogTrigger>
           <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
@@ -175,6 +176,76 @@ const ContentEditor = ({ sectionKey, sectionName, children }: ContentEditorProps
                     <Textarea
                       value={editedContent.description || ''}
                       onChange={(e) => updateField('description', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                </>
+              )}
+
+              {sectionKey === 'impact_section' && (
+                <>
+                  <div>
+                    <Label>Main Title</Label>
+                    <Input
+                      value={editedContent.mainTitle || ''}
+                      onChange={(e) => updateField('mainTitle', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label>Main Description</Label>
+                    <Textarea
+                      value={editedContent.mainDescription || ''}
+                      onChange={(e) => updateField('mainDescription', e.target.value)}
+                      className="mt-1"
+                      rows={3}
+                    />
+                  </div>
+                  <div>
+                    <Label>Current Year Students Supported</Label>
+                    <Input
+                      value={editedContent.studentsSupported || ''}
+                      onChange={(e) => updateField('studentsSupported', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label>Sanitary Pads Distributed</Label>
+                    <Input
+                      value={editedContent.sanitaryPads || ''}
+                      onChange={(e) => updateField('sanitaryPads', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label>Winter Jerseys Provided</Label>
+                    <Input
+                      value={editedContent.winterJerseys || ''}
+                      onChange={(e) => updateField('winterJerseys', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label>Schools Renovated</Label>
+                    <Input
+                      value={editedContent.schoolsRenovated || ''}
+                      onChange={(e) => updateField('schoolsRenovated', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label>CTA Title</Label>
+                    <Input
+                      value={editedContent.ctaTitle || ''}
+                      onChange={(e) => updateField('ctaTitle', e.target.value)}
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label>CTA Description</Label>
+                    <Textarea
+                      value={editedContent.ctaDescription || ''}
+                      onChange={(e) => updateField('ctaDescription', e.target.value)}
                       className="mt-1"
                     />
                   </div>
