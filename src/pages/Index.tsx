@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ChangeSection from "@/components/ChangeSection";
@@ -10,12 +9,10 @@ import EditingIndicator from "@/components/EditingIndicator";
 import { EditModeProvider } from "@/hooks/useEditMode";
 
 const Index = () => {
-  const [editMode, setEditMode] = useState(false);
-
   return (
     <EditModeProvider>
       <div className="min-h-screen">
-        <AdminPanel editMode={editMode} setEditMode={setEditMode} />
+        <AdminPanel />
         <EditingIndicator />
         <Header />
         <Hero />

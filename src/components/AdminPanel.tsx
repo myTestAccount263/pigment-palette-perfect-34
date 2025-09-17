@@ -18,14 +18,11 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
+import { useEditMode } from '@/hooks/useEditMode';
 
-interface AdminPanelProps {
-  editMode: boolean;
-  setEditMode: (editMode: boolean) => void;
-}
-
-const AdminPanel = ({ editMode, setEditMode }: AdminPanelProps) => {
+const AdminPanel = () => {
   const { user, userRole, signOut } = useAuth();
+  const { editMode, setEditMode } = useEditMode();
   const navigate = useNavigate();
   const [isExpanded, setIsExpanded] = useState(false);
 
