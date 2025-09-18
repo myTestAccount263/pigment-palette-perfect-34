@@ -13,48 +13,62 @@ const TeamSection = () => {
 
   const allTeamMembers = [
     {
-      name: "Alisa Ncube",
-      role: "Executive Director",
+      name: "Alisa Adams",
+      role: "Founder",
       type: "leadership",
       image: alisaImage,
       bio: "Leading the foundation with vision and dedication to educational transformation."
     },
     {
-      name: "David Mutamba",
-      role: "Field Coordinator",
+      name: "Alison Hama",
+      role: "Strategic Partnerships Lead",
       type: "staff",
       image: alisaImage, // placeholder
-      bio: "Coordinating on-ground initiatives and community outreach programs."
+      bio: "Building strategic partnerships to expand our impact and reach."
     },
     {
-      name: "Grace Chikomo",
-      role: "Finance Manager",
+      name: "Lindisi Doba",
+      role: "Community Engagement Officer",
       type: "staff",
       image: vanessaImage, // placeholder
-      bio: "Ensuring financial transparency and sustainable resource management."
+      bio: "Connecting with communities and fostering meaningful relationships."
     },
     {
-      name: "James Nyoni",
-      role: "Education Specialist",
+      name: "Prudence Jingura",
+      role: "Social Media & Marketing Intern",
+      type: "staff",
+      image: vanessaImage, // placeholder
+      bio: "Creating engaging content and expanding our digital presence."
+    },
+    {
+      name: "Simbarashe Mahlaulo",
+      role: "M & E Data Collection Officer",
+      type: "staff",
+      image: simbarasheImage,
+      bio: "Collecting and analyzing data to measure our program effectiveness."
+    },
+    {
+      name: "Tapiwa Yvette Chikwanha",
+      role: "People Manager",
+      type: "staff",
+      image: alisaImage, // placeholder
+      bio: "Supporting our team and fostering a positive work environment."
+    },
+    {
+      name: "Thandolwenkosi Sibanda",
+      role: "Monitoring & Evaluation Officer",
       type: "staff",
       image: simbarasheImage, // placeholder
-      bio: "Developing curriculum and educational programs for maximum impact."
+      bio: "Ensuring program quality and measuring impact for continuous improvement."
     },
     {
-      name: "Simbarashe Mombe",
+      name: "Vanessa Kambasha",
       role: "Program Manager",
-      type: "leadership",
-      image: simbarasheImage,
-      bio: "Managing educational programs and measuring their transformative impact."
-    },
-    {
-      name: "Vanessa Muringani",
-      role: "Communications Manager",
       type: "staff",
       image: vanessaImage,
-      bio: "Sharing our story and connecting with communities worldwide."
+      bio: "Managing educational programs and coordinating implementation efforts."
     }
-  ].sort((a, b) => a.name.localeCompare(b.name));
+  ];
 
   const displayedMembers = showAll ? allTeamMembers : allTeamMembers.slice(0, 3);
 
