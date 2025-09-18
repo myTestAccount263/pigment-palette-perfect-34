@@ -42,7 +42,7 @@ const TeamSection = () => {
     },
     {
       name: "Simbarashe Mahlaulo",
-      role: "Operations and Logistics",
+      role: "OPERATIONS & LOGISTICS",
       type: "staff",
       image: simbarasheImage,
       bio: "Managing operations and logistics to ensure smooth program delivery."
