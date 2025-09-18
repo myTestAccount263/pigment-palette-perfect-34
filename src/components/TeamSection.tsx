@@ -42,10 +42,10 @@ const TeamSection = () => {
     },
     {
       name: "Simbarashe Mahlaulo",
-      role: "M & E Data Collection Officer",
+      role: "Operations and Logistics",
       type: "staff",
       image: simbarasheImage,
-      bio: "Collecting and analyzing data to measure our program effectiveness."
+      bio: "Managing operations and logistics to ensure smooth program delivery."
     },
     {
       name: "Tapiwa Yvette Chikwanha",
