@@ -18,12 +18,15 @@ const AdminControls = () => {
 
   if (!user) {
     return (
-      <a
+      <Button
         onClick={handleSignIn}
-        className="fixed top-4 right-4 z-50 text-xs text-muted-foreground hover:text-foreground cursor-pointer transition-colors"
+        variant="outline"
+        size="sm"
+        className="fixed top-4 right-4 z-50 bg-background/90 backdrop-blur-sm"
       >
-        •
-      </a>
+        <LogIn className="w-4 h-4 mr-2" />
+        Admin Login
+      </Button>
     );
   }
 
