@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { LogIn, LogOut, UserCog } from 'lucide-react';
+import { LogOut, UserCog } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const AdminControls = () => {
   const { user, userRole, signOut } = useAuth();
@@ -12,22 +13,21 @@ const AdminControls = () => {
     navigate('/');
   };
 
-  const handleSignIn = () => {
-    navigate('/auth');
-  };
+  // Hidden keyboard shortcut for admin access (Ctrl+Shift+A)
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.ctrlKey && event.shiftKey && event.key === 'A' && !user) {
+        event.preventDefault();
+        navigate('/auth');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [navigate, user]);
 
   if (!user) {
-    return (
-      <Button
-        onClick={handleSignIn}
-        variant="outline"
-        size="sm"
-        className="fixed top-4 right-4 z-50 bg-background/90 backdrop-blur-sm"
-      >
-        <LogIn className="w-4 h-4 mr-2" />
-        Admin Login
-      </Button>
-    );
+    return null; // No visible login access - use Ctrl+Shift+A or navigate to /auth directly
   }
 
   if (userRole === 'admin' || userRole === 'editor') {
